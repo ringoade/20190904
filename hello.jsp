@@ -1,11 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<!DOCTYPE HTML>  <--  hello.jsp  -->
+<!doctype html> <!-- index.html-->
 <html>
-<head>
- <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
- <title>hello jsp</title>
-</head>
-<body>
- <% out.println(" 20141472  김선호 "); %>
-</body>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+    <title>hello</title>
+  </head>
+  <body>
+    <h1 id="aList">1주차 과제</h1>
+    <ul>
+      <li><img src="../jsp1.PNG"alt="화면"/></li>      
+      <li><img src="../jsp2.PNG"alt="화면"/></li>
+    </ul>
+    <hr/>
+  </body>
 </html>
