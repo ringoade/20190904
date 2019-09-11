@@ -1,0 +1,16 @@
+<!doctype html> <!-- index.html-->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+    <title>pageTest</title>
+  </head>
+  <body>
+    <h1 id="aList">2주차 과제</h1>
+    <ul>
+      <li><img src="../jsp3.PNG"alt="화면"/></li>      
+      <li><img src="../jsp4.PNG"alt="화면"/></li>
+    </ul>
+    <hr/>
+  </body>
+</html>
