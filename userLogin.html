@@ -1,4 +1,6 @@
-<!doctype html> <!-- userLogin.html -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("utf-8"); %>
+<!DOCTYPE html> <!--  userLogin.html  -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -26,15 +28,12 @@
    <li><a href="http://hive.dju.ac.kr">조회</a></li>
   </ul></nav>
  <section>
-  <form action="http://203.237.142.245/~s20141472/week03/userLogin.jsp" method="post">
-   <fieldset><legend>로그인</legend>
+   <fieldset><legend>로그인 확인</legend>
     <label for="stud_user">아이디</label>
-    <input class="id_form" type="text" name="stud_user" size="20" maxlength="50"/><br/><br/>
+    <label class="id_form"><%=request.getParameter("stud_user")%></label><br/><br/>
     <label for="stud_passwd">암호명</label>
-    <input class="id_form" type="password" name="stud_passwd" size="20" maxlength="50"/><br/><br/>
-    <input type="submit" value="로그인">
-   </fieldset>
-  </form> 
+    <label class="id_form"><%=request.getParameter("stud_passwd")%></label><br/><br/>
+   </fieldset> 
  </section>
  <footer>
   <p>&copy; 20XX Made by Korea. All rights reserved.</p>
