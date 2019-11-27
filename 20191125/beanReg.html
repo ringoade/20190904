@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html> <!-- ~/beanReg.html -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<style> * {padding:0; margin:0;}
+ body{font-family: verdana, sans-serif; font-size:0.8em;}
+ header, nav, section, article, footer{border:1px solid gray; margin:5px; padding:8px;}
+ nav ul{margin:0; padding:0;}
+ nav ul li{display:inline; margin:5px;}
+ a:link{ color:blue; text-decoration:none;}
+ a:visited { color:purple; text-decoration:none;}
+ a:hover {text-decoration:underline;}
+ a:active {color:red; text-decoration:none;}
+ section {height:800px;}
+ .id_form{width:50px;}
+ .label_form{display:inline-block; width:55px; height:14px; color:red; padding:5px;}
+ .button_form{ width:60px; margin-left:5px;}
+ .button2_form{ width:100px; margin-left:5px;}
+ .fset{padding: 15px;}
+ #dupBtn{ height:25px; }
+ ul.level_1 > li{list-style:none; display:inline-block; vertical-align:bottom;}
+ ul.level_1 > li > ul {list-style:none;}
+ .level_2 li {padding-top:5px;}
+ .level_2 span { display:inline-block; width:70px;}
+ .level_2 input { width: 100px; }
+ #loginBtn button {margin-left:5px; height:42px;}
+</style><title>로그인 실습</title></head>
+<body>
+ <header><h2>Anime DB</h2></header>
+ <nav><ul>
+   <li><a href="./beanLogin.html">Login</a></li>
+   <li><a href="./beanReg.html">작품 정보 Update </a><li></ul></nav>
+ <section>
+  <form action="./beanReg.jsp" method="post">
+   <fieldset class = "fset"> <legend>작품 정보</legend>
+   <fieldset class = "fset"> <legend>작품명 / 장르오후 3:18 2019-11-27</legend>
+   <label class="label_form" for="stud_name"> 작품명</label>
+   <input type="text" name="stud_name" size="18" maxlength="50" required/>
+	<button id="dupBtn">중복확인</button><br/>
+   <label id="label_form2" class="label_form" for="stud_email"> 장르</label>
+   <input type="text" name="stud_email" size="18" maxlength="50" /><br/>
+   </fieldset>
+  <fieldset class = "fset"> <legend> 제작사</legend>
+   <label id="label_form3" class="label_form" for="stud_phone"> 제작사</label>
+   <input type="text" name="stud_phone" size="18" maxlength="50" /><br/>
+   <img src="https://ringoade.github.io/20191125/j_c_staff1.png"/><br/><br/>
+   <img src="https://ringoade.github.io/20191125/kyoto_animation.png"/><br/><br/>
+   <img src="https://ringoade.github.io/20191125/shaft.png"/></fieldset>
+
+   </fieldset>
+   <fieldset class = "fset"> <legend>방영 년도</legend>
+   <label for="stud_gender">2016</label>
+   <input class="id_form" type="radio" name="stud_gender" value="2016" checked/>
+   <label for="stud_gender">2017</label>
+   <input class="id_form" type="radio" name="stud_gender" value="2017" checked/>
+   <label for="stud_gender">2018</label>
+   <input class="id_form" type="radio" name="stud_gender" value="2018" checked/>
+   <label for="stud_gender">2019</label>
+   <input class="id_form" type="radio" name="stud_gender" value="2019" checked/>
+   </fieldset>
+   <fieldset class = "fset"> <legend>방영 분기</legend>
+   <label for="stud_gender">1분기</label>
+   <input class="id_form" type="radio" name="stud_gender" value="1분기" checked/>
+   <label for="stud_gender">2분기</label>
+   <input class="id_form" type="radio" name="stud_gender" value="2분기" checked/>
+   <label for="stud_gender">3분기</label>
+   <input class="id_form" type="radio" name="stud_gender" value="3분기" checked/>
+   <label for="stud_gender">4분기</label>
+   <input class="id_form" type="radio" name="stud_gender" value="4분기" ></fieldset>
+   <fieldset class = "fset"> <legend>방영 화수</legend>
+   <label for="stud_hobby1">1쿨</label>
+   <input class="id_form" type="checkbox" name="stud_hobby" value="1쿨(12화)"/>
+   <label for="stud_hobby1">2쿨</label>
+   <input class="id_form" type="checkbox" name="stud_hobby" value="2쿨(24화)"/>
+   <label for="stud_hobby1">4쿨</label>
+   <input class="id_form" type="checkbox" name="stud_hobby" value="4쿨(48화)"/>
+   <label for="stud_hobby1">장편</label>
+   <input class="id_form" type="checkbox" name="stud_hobby" value="장편시리즈"/>
+   </fieldset><br/>
+   <input class="button2_form" type="submit" value="DB Update">
+   <input class="button_form" type="reset" value="취소">
+   </fieldset></form></section>
+  <footer><p>&copy;2019 Made by Korea. All right reserved.</p></footer></body></html>
